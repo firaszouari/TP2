@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace TP2
 {
-    class Compte
+    public class Compte
     {
         List<Mouvements> lmouv = new List<Mouvements>();
         String numcompt;
         double sold;
         string titulaire;
 
-        List<Mouvements> list_mouv { get; set; }
+        public List<Mouvements> list_mouv { get; set; }
         public string numero_compte { get; set; }
         public double solde_compte { get; set; }
         public string titulaire_compte{get; set;}

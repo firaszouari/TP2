@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TP2
 {
-    class Mouvements
+    public class Mouvements
     {
         private DateTime dateop;
         private double montant;

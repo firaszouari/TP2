@@ -50,7 +50,7 @@
             this.Btn_Ajout = new System.Windows.Forms.ToolStripButton();
             this.Btn_Supp = new System.Windows.Forms.ToolStripButton();
             this.Btn_Rech = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.Btn_FinRech = new System.Windows.Forms.ToolStripButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.Dg_Mouv = new System.Windows.Forms.DataGridView();
@@ -277,7 +277,7 @@
             this.Btn_Ajout,
             this.Btn_Supp,
             this.Btn_Rech,
-            this.toolStripButton4});
+            this.Btn_FinRech});
             this.Ts_Menu.Location = new System.Drawing.Point(3, 3);
             this.Ts_Menu.Name = "Ts_Menu";
             this.Ts_Menu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
@@ -310,14 +310,15 @@
             this.Btn_Rech.Name = "Btn_Rech";
             this.Btn_Rech.Size = new System.Drawing.Size(123, 24);
             this.Btn_Rech.Text = "Rechercher";
+            this.Btn_Rech.Click += new System.EventHandler(this.Btn_Rech_Click);
             // 
-            // toolStripButton4
+            // Btn_FinRech
             // 
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(123, 24);
-            this.toolStripButton4.Text = "Fin rechercher";
+            this.Btn_FinRech.Image = ((System.Drawing.Image)(resources.GetObject("Btn_FinRech.Image")));
+            this.Btn_FinRech.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Btn_FinRech.Name = "Btn_FinRech";
+            this.Btn_FinRech.Size = new System.Drawing.Size(123, 24);
+            this.Btn_FinRech.Text = "Fin rechercher";
             // 
             // tabPage2
             // 
@@ -738,7 +739,7 @@
         private System.Windows.Forms.ToolStripButton Btn_Ajout;
         private System.Windows.Forms.ToolStripButton Btn_Supp;
         private System.Windows.Forms.ToolStripButton Btn_Rech;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton Btn_FinRech;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox Txt_Tit;
@@ -747,7 +748,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView Dg_Client;
         private System.Windows.Forms.DataGridViewTextBoxColumn num;
         private System.Windows.Forms.DataGridViewTextBoxColumn titu;
         private System.Windows.Forms.DataGridViewTextBoxColumn sld;
@@ -789,6 +789,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        public System.Windows.Forms.DataGridView Dg_Client;
     }
 }
 
