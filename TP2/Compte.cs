@@ -37,12 +37,12 @@ namespace TP2
 
         public void retirer(double val)
         {
-            sold -= val;
+            solde_compte -= val;
         }
 
         public void verser(double val)
         {
-            sold += val;
+            solde_compte += val;
         }
     }
 }
